@@ -30,10 +30,6 @@ let persons = [
     }
 ]
 
-app.get('/', (req, res) => {
-    res.send('<h1>Index page</h1>')
-})
-
 app.get('/info/', (req, res) => {
     res.send(`
     <p>Phonebook has info for ${persons.length}</p>
